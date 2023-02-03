@@ -9554,4 +9554,95 @@ header.masthead .post-heading .meta a {
   }
 }
 
+html, body {
+  min-width: 375px;
+}
+
+#navbar-mobile {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  transition: 0.15s all ease-in;
+  background: #fff;
+  z-index: 99999;
+}
+
+.navbar-mobile-heading {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 2em 0;
+}
+
+#navbar-mobile ul li a:link, #navbar-mobile ul li a:visited {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: system-ui;
+  opacity: 0.5;
+}
+
+#navbar-mobile ul li a:hover {
+  opacity: 1;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .main-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.15s opacity ease-in;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  body.nav-open .main-overlay {
+    opacity: 0.6;
+    pointer-events: all;
+  }
+  body > main {
+    transition: 0.15s all ease-in;
+    position: relative;
+  }
+  body.nav-open #navbar-mobile {
+    left: 0;
+  }
+  body.nav-open > main {
+    transform: translateX(250px);
+  }
+  body.nav-open > main li.nav-item {
+    text-align: center;
+    font-family: system-ui;
+  }
+  body.nav-open > main .ml-auto, .mx-auto {
+    margin-left: auto !important;
+  }
+  body.nav-open > main .navbar-nav .ml-auto {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  #mainNav .collapse {
+    display: none;
+  }
+  .navbar > .container {
+    justify-content: initial;
+  }
+  .navbar-brand {
+    margin-left: 1em;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

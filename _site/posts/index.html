@@ -27,36 +27,55 @@
 
 
 <body>
+  <div id="navbar-mobile">
+    <h4 class="navbar-mobile-heading">Menu</h4>
+    <!-- Navigation -->
+<ul class="navbar-nav ml-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/about">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/contact">Contact</a>
+  </li>
+</ul>
+  </div>
+  <main>
 
-  <!-- Navigation -->
+    <!-- Header -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="/">Bang Bang Bunny</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      Menu
+    <button class="navbar-toggler navbar-toggler-right" type="button" aria-label="Toggle navigation">
       <i class="fa fa-bars"></i>
     </button>
+    <a class="navbar-brand" href="/">Bang Bang Bunny</a>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/posts">Posts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-      </ul>
+      <!-- Navigation -->
+<ul class="navbar-nav ml-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/about">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/posts">Posts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/contact">Contact</a>
+  </li>
+</ul>
     </div>
   </div>
 </nav>
 
 
-  <!-- Page Header -->
+    <!-- Page Header -->
 
 <header class="masthead" style="background-image: url('/img/bg-post.jpg')">
   
@@ -210,7 +229,7 @@
   </div>
 
 
-  <!-- Footer -->
+    <!-- Footer -->
 
 <hr>
 
@@ -260,7 +279,7 @@
 </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
 
@@ -269,7 +288,7 @@
 
 
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -281,6 +300,19 @@
 
 
 
+    <div class="main-overlay"></div>
+
+  </main>
+  <script type="text/javascript">
+    // nav toggle
+    $('.navbar-toggler').on('click', () => {
+        $('body').toggleClass('nav-open')
+    });
+
+    $('#navbar-mobile ul li a, .main-overlay').on('click', () => {
+      $('body').removeClass('nav-open');
+    });
+  </script>
 </body>
 
 </html>
