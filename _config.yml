@@ -14,6 +14,9 @@ linkedin_username:
 # Add your google-analytics ID here to activate google analytics
 google_analytics: UA-XXXXXXXXX-X # out your google-analytics code
 
+# Formspree id
+formspree_id: xpzeqgyd
+
 # Build settings
 markdown: kramdown
 paginate: 5
