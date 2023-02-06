@@ -17,6 +17,9 @@ google_analytics: UA-XXXXXXXXX-X # out your google-analytics code
 # Formspree id
 formspree_id: xpzeqgyd
 
+# Recaptcha site key
+recaptcha_site_key: 6LdjDFkkAAAAADZO3qcdJ-vX3N2ypH8afh6CO3sw
+
 # Build settings
 markdown: kramdown
 paginate: 5
