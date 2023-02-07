@@ -9593,6 +9593,18 @@ html, body {
   border: none;
 }
 
+.BC-iframe {
+  border: 0;
+  height: 120px;
+}
+
+@media only screen and (min-width: 992px) {
+  .BC-iframe {
+    border: 0;
+    width: 600px;
+    height: 120px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .main-overlay {
     position: absolute;
