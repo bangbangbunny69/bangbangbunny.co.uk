@@ -39,17 +39,6 @@ html, body {
 .navbar-toggler {
     border: none;
 }
-.BC-iframe{
-    border: 0; 
-    height: 120px;
-}
-@media only screen and (min-width: 992px) {
-    .BC-iframe{
-        border: 0; 
-        width: 600px;
-        height: 120px;
-    }
-}
 
 @media only screen and (max-width: 991px) {
     .main-overlay {
@@ -108,4 +97,12 @@ html, body {
     .navbar-brand {
         margin-left: 1em;
     }
+}
+
+header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
+    padding: 200px 0 150px;
+}
+
+.bc-iframe {
+    margin-bottom: 100px;
 }
