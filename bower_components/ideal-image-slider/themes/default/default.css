@@ -17,7 +17,7 @@
   /* Medium screens */
   @media all and (max-width: 800px) {
 	.ideal-image-slider {
-		width: 28rem;
+		width: 39rem;
 		height: 28rem;
 	}
   }
@@ -25,7 +25,7 @@
   /* Small screens */
   @media all and (max-width: 500px) {
 	.ideal-image-slider {
-		width: 20rem;
+		width: 24rem;
 		height: 20rem;
 	}
   }
