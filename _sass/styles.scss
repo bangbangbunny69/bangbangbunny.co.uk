@@ -40,6 +40,33 @@ html, body {
     border: none;
 }
 
+.bc-iframe {
+    border: 0; 
+    width: 1000px; 
+    height: 120px;
+    margin-bottom: 100px;
+}
+
+ /* Medium screens */
+ @media all and (max-width: 800px) {
+	.bc-iframe {
+		border: 0; 
+		width: 35.55rem; 
+		height: 120px;
+		margin-bottom: 100px;
+	}
+  }
+
+ /* Small screens */
+ @media all and (max-width: 500px) {
+	.bc-iframe {
+		border: 0; 
+		width: 21.55rem; 
+		height: 120px;
+		margin-bottom: 100px;
+	}
+  }
+
 @media only screen and (max-width: 991px) {
     .main-overlay {
         position: absolute;
@@ -103,6 +130,3 @@ header.masthead .page-heading, header.masthead .post-heading, header.masthead .s
     padding: 200px 0 150px;
 }
 
-.bc-iframe {
-    margin-bottom: 100px;
-}
