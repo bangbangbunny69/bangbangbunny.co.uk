@@ -32,9 +32,11 @@
         "startbootstrap-clean-blog": "5.1.0"
     },
     "devDependencies": {
-        "browser-sync": "2.26.14"
+        "browser-sync": "2.26.14",
+        "gh-pages": "^5.0.0"
     },
     "scripts": {
-        "deploy": "git push origin :gh-pages && git subtree push --prefix _site origin gh-pages"
+        "deploy": "gh-pages -d _site",
+        "dev": "bundle exec jekyll serve"
     }
 }
