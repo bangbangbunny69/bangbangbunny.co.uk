@@ -9595,7 +9595,7 @@ html, body {
 
 .bc-iframe {
   border: 0;
-  width: 1000px;
+  width: 100%;
   height: 120px;
   margin-bottom: 100px;
 }
@@ -9604,7 +9604,7 @@ html, body {
 @media all and (max-width: 800px) {
   .bc-iframe {
     border: 0;
-    width: 35.55rem;
+    width: 100%;
     height: 120px;
     margin-bottom: 100px;
   }
@@ -9613,7 +9613,7 @@ html, body {
 @media all and (max-width: 500px) {
   .bc-iframe {
     border: 0;
-    width: 21.55rem;
+    width: 100%;
     height: 120px;
     margin-bottom: 100px;
   }
