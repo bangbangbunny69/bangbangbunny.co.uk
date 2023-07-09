@@ -36,7 +36,7 @@
         "gh-pages": "^5.0.0"
     },
     "scripts": {
-        "deploy": "npm run deploy",
+        "deploy": "gh-pages -d _site",
         "dev": "bundle exec jekyll serve"
     }
 }
