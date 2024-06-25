@@ -37,6 +37,6 @@
     },
     "scripts": {
         "deploy": "npm run deploy",
-        "dev": "bundle exec jekyll serve"
+        "dev": "bundle exec jekyll build"
     }
 }
