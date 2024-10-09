@@ -5,6 +5,8 @@ html, body {
     min-width: 375px;
 }
 
+
+
 #navbar-mobile {
     position: fixed;
     left: -250px;
@@ -129,4 +131,16 @@ html, body {
 header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
     padding: 200px 0 150px;
 }
+// Buttons need to match colours of our QR code for bangbangbunny.co.uk
+#eapps-instagram-feed-1 a.eapps-instagram-feed-header-follow-button, #eapps-instagram-feed-1 a.eapps-instagram-feed-header-follow-button {
+    background: #00ff04 !important;
+    border-color:#cc0000 !important;
+    font-size: x-large;
 
+}
+
+.clearfix > .btn, .btn-primary {
+    background-color: #00ff04 !important;
+    border-color:#cc0000 !important;
+    }
+// button changes end 
