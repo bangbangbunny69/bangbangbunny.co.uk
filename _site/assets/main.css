@@ -9673,4 +9673,15 @@ header.masthead .page-heading, header.masthead .post-heading, header.masthead .s
   padding: 200px 0 150px;
 }
 
+#eapps-instagram-feed-1 a.eapps-instagram-feed-header-follow-button, #eapps-instagram-feed-1 a.eapps-instagram-feed-header-follow-button {
+  background: #00ff04 !important;
+  border-color: #cc0000 !important;
+  font-size: x-large;
+}
+
+.clearfix > .btn, .btn-primary {
+  background-color: #00ff04 !important;
+  border-color: #cc0000 !important;
+}
+
 /*# sourceMappingURL=main.css.map */
