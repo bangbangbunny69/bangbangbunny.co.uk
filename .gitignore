@@ -5,3 +5,7 @@ node_modules
 Gemfile.lock
 .history
 *.gem
+.jekyll-cache
+.jekyll-metadata
+.bundle
+vendor
